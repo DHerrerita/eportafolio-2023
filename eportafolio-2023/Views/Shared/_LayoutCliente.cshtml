@@ -17,36 +17,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href=@*"@Url.Action("index")*@>Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("index","home")">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("about")">Acerca de mi</a>
+                        <a class="nav-link" href="@Url.Action("about","home")">Acerca de mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portafolio</a>
+                        <a class="nav-link" href="@Url.Action("Index","Portafolio")" >Portafolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="@Url.Action("Contact","Home")">Contacto</a>
                     </li>
-                    @*<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Portafolio</a></li>
-                            <li><a class="dropdown-item" href="#">Contacto</a></li>
-
-                        </ul>
-                    </li>*@
-                    @*<li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-        </li>*@
                 </ul>
-                @*<form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>*@
-            </div>
+             </div>
         </div>
     </nav>
 
